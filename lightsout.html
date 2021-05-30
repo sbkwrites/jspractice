@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .jumbotron {
+        align-items : center;
+        padding : 30px;
+        }
+
+      
+    </style>
+
+
+
+</head>
+<body>
+  
+      <div class="jumbotron bodyText">
+        <div class="contentText">
+          <h2 class="text">Tame impala</h2>
+          <p  class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      </div>
+
+      <div class="buttonClass">
+        
+        <button class="btn btn-primary mode-btn" value="">
+          Day
+        </button>
+      </div>
+
+
+      <script>
+          const buttonValue = document.querySelector(".mode-btn");
+const bodyBack = document.querySelector(".bodyText");  
+const textValue = document.querySelectorAll(".text"); 
+let modeFlag = false;
+
+function changeBackground()
+{
+    
+    bodyBack.style.background = '#000';    
+    textValue.forEach((textcolour) =>{
+      textcolour.style.color = '#FFF';
+      buttonValue.innerHTML ='Night' 
+    });
+
+  
+
+}
+
+ buttonValue.addEventListener('click',changeBackground) ;                                     
+      </script>
+</body>
+</html><!-- CSS only -->
